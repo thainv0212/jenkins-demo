@@ -19,3 +19,6 @@ dockerRun {
     clean true
     daemonize false
 }
+dependencies {
+    testCompile "junit:junit:4.11" 
+}
