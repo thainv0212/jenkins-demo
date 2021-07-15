@@ -19,6 +19,16 @@ dockerRun {
     clean true
     daemonize false
 }
-dependencies {
-    testCompile "junit:junit:4.11" 
+subprojects {
+    //Put instructions for each sub project
+    apply plugin: "java"
+    repositories {
+        mavenCentral()
+    }
+
+
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.+'
+    }
 }
